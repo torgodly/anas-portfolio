@@ -2,11 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home')->name('home');
-Route::get('/snapchat-lenses', function (){
+Route::get('/', function () {
+    $user = \App\Models\User::first();
+    return view('home', compact('user'));
+})->name('home');
+Route::get('/snapchat-lenses', function () {
     //if there is category in the url then filter the lenses by category
     $lenses = \App\Models\Len::all();
-    if(request('category')){
+    if (request('category')) {
         $lenses = \App\Models\Len::where('category', request('category'))->get();
     }
     return view('SnapchatLenses', compact('lenses'));
