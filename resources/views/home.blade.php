@@ -1,12 +1,12 @@
 <x-app-layout>
-    <main class="mt-6 mx-20">
+    <main class="mt-6 mx-10">
         <article class="space-y-10">
 
             <div class="flex gap-10">
                 {{-- Welcome Message --}}
-                <div class="bg-white rounded-3xl w-3/5 p-10 text-black ">
+                <div class="bg-white rounded-3xl w-3/5 p-10 grid text-black ">
                     <p class="text-8xl">Hi, I'm Anas and this is my work gallery</p> <button
-                    <button class="bg-black rounded-3xl px-12 py-4 mt-6 text-3xl font-bold justify-self-center text-white">See Lenses</button>
+                    <button class="bg-black rounded-3xl px-12 py-4 mt-6 text-3xl font-bold justify-self-start  text-white">See Lenses</button>
                 </div>
                 {{-- Profile Picture --}}
 

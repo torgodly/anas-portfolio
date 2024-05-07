@@ -2,11 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome')->name('home');
-
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+Route::view('/', 'home')->name('home');
+Route::view('/snapchat-lenses', 'SnapchatLenses')->name('snapchat-lenses');
+Route::view('/filesandvideos', 'filesandvideos')->name('filesandvideos');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])

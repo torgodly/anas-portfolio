@@ -16,7 +16,7 @@ new class extends Component {
 }; ?>
 
 
-<nav class="my-4 max-w-screen-xl mx-auto">
+<nav class="my-4 max-w-8xl mx-10">
     <div class="flex flex-wrap items-center justify-between mx-auto p-4">
         <x-logo class="w-40 mb-10" />
 
@@ -36,17 +36,19 @@ new class extends Component {
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
             <ul
-                class="flex flex-col font-medium p-4 md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                class="flex flex-col font-extralight p-4 md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link :href="route('home')" :active="request()->routeIs('dashboard')" wire:navigate>
+                <x-nav-link :href="route('snapchat-lenses')" :active="request()->routeIs('snapchat-lenses')" wire:navigate>
                     {{ __('Snapchat Lenses') }}
                 </x-nav-link>
-                <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+                <x-nav-link :href="route('filesandvideos')" :active="request()->routeIs('filesandvideos')" wire:navigate>
                     {{ __('Files & Videos') }}
                 </x-nav-link>
-                <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+                <x-nav-link
+                {{-- :href="route('snapchat-lenses')" :active="request()->routeIs('snapchat-lenses')" wire:navigate --}}
+                >
                     {{ __('Contact') }}
                 </x-nav-link>
             </ul>
