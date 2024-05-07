@@ -12,7 +12,7 @@
             <li class="p-4 ">Games</li>
         </ul>
 
-        <section class="mt-32 mb-40 grid grid-cols-3 gap-x-6 gap-y-40">
+        <section class="mt-32 mb-40 md:grid xl:grid-cols-3 md:grid-cols-2 grid gap-x-6 gap-y-40 mx-10 xl:mx-0">
             @for ($x = 0 ; $x < 9 ; $x++)
             <div class="relative overflow-visible">
                 <div class="h-[550px] bg-white rounded-3xl"></div>
