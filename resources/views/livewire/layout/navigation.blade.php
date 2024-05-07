@@ -1,28 +1,22 @@
 <?php
 
-use App\Livewire\Actions\Logout;
 use Livewire\Volt\Component;
 
 new class extends Component {
     /**
      * Log the current user out of the application.
      */
-    public function logout(Logout $logout): void
-    {
-        $logout();
 
-        $this->redirect('/', navigate: true);
-    }
 }; ?>
 
 
-<nav class="my-4 max-w-8xl mx-10">
+<nav class="my-4 max-w-8xl mx-2 sm:mx-10">
     <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-        <x-logo class="w-40 mb-10" />
+        <x-logo class="w-14 sm:w-40 sm:mb-10 mb-2" />
 
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact Me</button>
+                class="text-black bg-snapchat-yellow transition-all hover:bg-snapchat-yellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:text-lg px-4 py-2 text-center">Contact Me</button>
             <button data-collapse-toggle="navbar-cta" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-cta" aria-expanded="false">
@@ -52,6 +46,55 @@ new class extends Component {
                     {{ __('Contact') }}
                 </x-nav-link>
             </ul>
+
+            <x-dropdown
+            align="right"
+            width="48">
+            <x-slot name="trigger">
+                <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                    <div
+                        x-data="{{ json_encode(['name' => auth()->user()->name]) }}"
+                        x-text="name"
+                        x-on:profile-updated.window="name = $event.detail.name"></div>
+
+                    <div class="ms-1">
+                        <svg
+                            class="fill-current h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20">
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </button>
+            </x-slot>
+
+            <x-slot name="content">
+                <x-dropdown-link
+                    :href="route('profile')"
+                    {{--                                    wire:navigate--}}
+                >
+                    {{ __('Profile') }}
+                </x-dropdown-link>
+                @if(auth()->user()->email === 'a@a.com')
+                    <x-dropdown-link
+                        href="/admin"
+                    >
+                        {{ __('Admin Panel') }}
+                    </x-dropdown-link>
+                @endif
+                <!-- Authentication -->
+                <button
+                    wire:click="logout"
+                    class="w-full text-start">
+                    <x-dropdown-link>
+                        {{ __('Log Out') }}
+                    </x-dropdown-link>
+                </button>
+            </x-slot>
+        </x-dropdown>
         </div>
     </div>
 </nav>
