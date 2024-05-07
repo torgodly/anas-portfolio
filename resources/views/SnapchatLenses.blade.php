@@ -12,7 +12,8 @@
             <li class="p-4 ">Games</li>
         </ul>
 
-        <section class="mt-32 grid grid-cols-3 gap-x-6 gap-y-40">
+        <section class="mt-32 mb-40 grid grid-cols-3 gap-x-6 gap-y-40">
+            @for ($x = 0 ; $x < 9 ; $x++)
             <div class="relative overflow-visible">
                 <div class="h-[550px] bg-white rounded-3xl"></div>
                 <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
@@ -22,43 +23,9 @@
                 </div>
 
             </div>
-            <div class="relative overflow-visible">
-                <div class="h-[550px] bg-white rounded-3xl"></div>
-                <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
-                    <div class=" rounded-3xl w-40 h-40 bg-snapchat-yellow "></div>
-                    <p class="text-white text-center mt-4 text-5xl">Text</p>
+            @endfor
 
-                </div>
-            </div>
-            <div class="relative overflow-visible">
-                <div class="h-[550px] bg-white rounded-3xl"></div>
-                <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
-                    <div class=" rounded-3xl w-40 h-40 bg-snapchat-yellow "></div>
-                    <p class="text-white text-center mt-4 text-5xl">Text</p>
 
-                </div>
-            </div> <div class="relative overflow-visible">
-                <div class="h-[550px] bg-white rounded-3xl"></div>
-                <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
-                    <div class=" rounded-3xl w-40 h-40 bg-snapchat-yellow "></div>
-                    <p class="text-white text-center mt-4 text-5xl">Text</p>
-
-                </div>
-            </div> <div class="relative overflow-visible">
-                <div class="h-[550px] bg-white rounded-3xl"></div>
-                <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
-                    <div class=" rounded-3xl w-40 h-40 bg-snapchat-yellow "></div>
-                    <p class="text-white text-center mt-4 text-5xl">Text</p>
-
-                </div>
-            </div> <div class="relative overflow-visible">
-                <div class="h-[550px] bg-white rounded-3xl"></div>
-                <div class="absolute left-1/2 -bottom-32 -translate-x-1/2 ">
-                    <div class=" rounded-3xl w-40 h-40 bg-snapchat-yellow "></div>
-                    <p class="text-white text-center mt-4 text-5xl">Text</p>
-
-                </div>
-            </div>
 
         </section>
     </article>
