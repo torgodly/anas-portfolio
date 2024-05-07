@@ -14,7 +14,7 @@
                     alt="Profile Picture">
             </div>
 
-            <div class="md:flex md:justify-between md:gap-14 space-y-8">
+            <div class="md:flex md:justify-between md:gap-14">
                 {{-- Experience Level --}}
                 <div
                     class="bg-white bg-opacity-15 border-4 grid relative border-white rounded-3xl md:w-[65%] p-6 text-black">
@@ -24,20 +24,20 @@
                     <p class="text-white md:text-6xl sm:text-5xl text-3xl"><span class="text-snapchat-yellow md:text-8xl sm:text-7xl text-5xl font-bold">317</span>+
                         Million Plays</p>
                     <img src="{{ asset('assets/Snapchat-Rotated.png') }}"
-                        class="absolute md:w-40 w-20 md:right-[6%] sm:right-[6%] right-0 md:top-1/2 top-2/3 -translate-y-1/2" alt="">
+                        class="absolute md:w-40 w-20 md:right-0 sm:right-[6%] right-0 md:top-1/2 top-2/3 -translate-y-1/2" alt="">
                     <button
                         class="bg-white rounded-3xl md:px-12 md:py-4 px-10 py-4 mt-6 md:text-3xl text-lg font-bold justify-self-center text-black">See
                         Lenses
                     </button>
                 </div>
                 {{-- Persoanl Information --}}
-                <div class="space-y-4 md:w-[35%] ">
+                <div class="space-y-4 md:w-[35%] mt-8 md:mt-0 ">
                     <div
                         class="rounded-3xl bg-white md:h-20 sm:h-[68px] h-16 p-4 grid content-center text-black text-center md:text-4xl sm:text-3xl text-2xl font-bold">
                         <p>Anas El-Ferjani</p>
                     </div>
                     <div
-                        class="rounded-3xl bg-snapchat-yellow md:h-20 sm:h-[68px] h-16 p-4 grid content-center text-black text-center md:text-4xl sm:text-3xl text-2xl font-bold">
+                        class="rounded-3xl bg-snapchat-yellow text-nowrap md:h-20 sm:h-[68px] h-16 p-4 grid content-center text-black text-center md:text-4xl sm:text-3xl text-2xl font-bold">
                         <p>Snapchat Lens Creator</p>
                     </div>
                     <div

@@ -64,9 +64,6 @@ new class extends Component {
                 </x-nav-link>
             </ul>
 
-<<<<<<< HEAD
-
-=======
 {{--            <x-dropdown--}}
 {{--            align="right"--}}
 {{--            width="48">--}}
@@ -115,7 +112,6 @@ new class extends Component {
 {{--                </button>--}}
 {{--            </x-slot>--}}
 {{--        </x-dropdown>--}}
->>>>>>> 6e48483b008fa9321c498c04a1d753eff95da785
         </div>
     </div>
 </nav>
