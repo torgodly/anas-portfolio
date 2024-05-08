@@ -14,6 +14,8 @@ Route::get('/snapchat-lenses', function (){
 
 Route::view('/filesandvideos', 'FilesAndVideos')->name('filesandvideos');
 Route::view('/contact', 'Contact')->name('contact');
+Route::view('/len/id', 'show')->name('len.show');
+
 
 Route::view('profile', 'profile')
    ->middleware(['auth'])

@@ -1,5 +1,5 @@
 <x-app-layout>
-    <main class="mt-6 sm:mx-10 mx-4">
+    <main class="mt-6 md:mx-10 w-fit mx-4">
         <article class="sm:space-y-14 space-y-8">
 
             <div class="md:flex-row flex flex-col-reverse md:gap-14 gap-6">
@@ -46,13 +46,13 @@
                     </div>
                     {{-- Social Media Links --}}
                     <div class="flex justify-between">
-                        <a href="#" class="md:h-24 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
+                        <a href="#" class="lg:h-24 md:h-20 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
                                 src="{{ asset('assets/Snapchat.png') }}" alt=""></a>
-                        <a href="#" class="md:h-24 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
+                        <a href="#" class="lg:h-24 md:h-20 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
                                 src="{{ asset('assets/Twitter.png') }}" alt=""></a>
-                        <a href="#" class="md:h-24 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
+                        <a href="#" class="lg:h-24 md:h-20 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
                                 src="{{ asset('assets/Instagram.png') }}" alt=""></a>
-                        <a href="#" class="md:h-24 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
+                        <a href="#" class="lg:h-24 md:h-20 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
                                 src="{{ asset('assets/Discord.png') }}" alt=""></a>
                     </div>
                 </div>
