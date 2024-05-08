@@ -1,3 +1,3 @@
-<header class="uppercase md:text-6xl text-4xl text-center tracking-tighter font-bold my-14 ">
-   {{ $slot }}
+<header class="font-somar my-14 text-center text-4xl font-bold uppercase md:text-6xl">
+    {{ $slot }}
 </header>

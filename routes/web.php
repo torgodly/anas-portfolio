@@ -22,7 +22,6 @@ Route::get('/filesandvideos', function () {
     return view('FilesAndVideos', compact('files', 'videos'));
 })->name('filesandvideos');
 Route::get('/contact', function () {
-
     $user = \App\Models\User::first();
     return view('Contact', compact('user'));
 })->name('contact');
@@ -41,7 +40,6 @@ Route::post('/contact', function () {
 Route::get('/files/{post}', function (Post $post) {
     return view('show', compact('post'));
 })->name('file.show');
-
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
