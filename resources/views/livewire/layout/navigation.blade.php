@@ -17,34 +17,34 @@ new class extends Component {
             <button type="button"
                 class="text-black bg-snapchat-yellow transition-all hover:bg-snapchat-yellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:text-lg px-4 py-2 text-center">Contact
                 Me</button>
-            <x-dropdown >
-                <x-slot name="trigger">
-                    <button
-                        class="inline-flex aspect-square lg:hidden items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-                        <div x-text="name" x-on:profile-updated.window="name = $event.detail.name"></div>
+{{--            <x-dropdown >--}}
+{{--                <x-slot name="trigger">--}}
+{{--                    <button--}}
+{{--                        class="inline-flex aspect-square lg:hidden items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">--}}
+{{--                        <div x-text="name" x-on:profile-updated.window="name = $event.detail.name"></div>--}}
 
-                        <div class="">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                            </svg>
-                        </div>
-                    </button>
-                </x-slot>
+{{--                        <div class="">--}}
+{{--                            <span class="sr-only">Open main menu</span>--}}
+{{--                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"--}}
+{{--                                viewBox="0 0 17 14">--}}
+{{--                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"--}}
+{{--                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />--}}
+{{--                            </svg>--}}
+{{--                        </div>--}}
+{{--                    </button>--}}
+{{--                </x-slot>--}}
 
-                <x-slot name="content">
-                    <x-dropdown-link :href="route('profile')" {{--                                    wire:navigate --}}>
-                        {{ __('Profile') }}
-                    </x-dropdown-link>
+{{--                <x-slot name="content">--}}
+{{--                    <x-dropdown-link :href="route('profile')" --}}{{----}}{{--                                    wire:navigate --}}{{----}}{{-->--}}
+{{--                        {{ __('Profile') }}--}}
+{{--                    </x-dropdown-link>--}}
 
-                    <!-- Authentication -->
-                        <x-dropdown-link>
-                            {{ __('Log Out') }}
-                        </x-dropdown-link>
-                </x-slot>
-            </x-dropdown>
+{{--                    <!-- Authentication -->--}}
+{{--                        <x-dropdown-link>--}}
+{{--                            {{ __('Log Out') }}--}}
+{{--                        </x-dropdown-link>--}}
+{{--                </x-slot>--}}
+{{--            </x-dropdown>--}}
         </div>
         <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-cta">
             <ul
@@ -64,9 +64,9 @@ new class extends Component {
                 </x-nav-link>
             </ul>
 
-<<<<<<< HEAD
+{{--<<<<<<< HEAD--}}
 
-=======
+{{--=======--}}
 {{--            <x-dropdown--}}
 {{--            align="right"--}}
 {{--            width="48">--}}
@@ -115,7 +115,7 @@ new class extends Component {
 {{--                </button>--}}
 {{--            </x-slot>--}}
 {{--        </x-dropdown>--}}
->>>>>>> 6e48483b008fa9321c498c04a1d753eff95da785
+{{-->>>>>>> 6e48483b008fa9321c498c04a1d753eff95da785--}}
         </div>
     </div>
 </nav>
