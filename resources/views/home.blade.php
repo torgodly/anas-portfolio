@@ -5,7 +5,7 @@
             <div class="md:flex-row flex flex-col-reverse md:gap-14 gap-6">
                 {{-- Welcome Message --}}
                 <div class="bg-white rounded-3xl md:w-3/5 sm:p-10 p-4 grid text-black">
-                    <p class="md:text-8xl text-6xl">Hi, I'm Anas and this is my work gallery</p> <button <button
+                    <p class="md:text-8xl text-6xl font-somar">Hi, I'm Anas and this is my work gallery</p> <button <button
                         class="bg-black rounded-3xl md:px-12 sm:py-4 px-10 py-4 mt-6 sm:text-3xl text-lg font-bold justify-self-start  text-white">See
                         Lenses</button>
                 </div>
@@ -18,7 +18,7 @@
                 {{-- Experience Level --}}
                 <div
                     class="bg-white bg-opacity-15 border-4 grid relative border-white rounded-3xl md:w-[65%] p-6 text-black">
-                    <p class="text-white md:text-6xl sm:text-5xl text-3xl"><span class="text-snapchat-yellow md:text-8xl sm:text-7xl text-5xl font-bold">3
+                    <p class="text-white md:text-6xl sm:text-5xl text-3xl font-somar font-thin"><span class="text-snapchat-yellow md:text-8xl sm:text-7xl text-5xl font-bold">3
                         </span>Years
                         of Experience</p>
                     <p class="text-white md:text-6xl sm:text-5xl text-3xl"><span class="text-snapchat-yellow md:text-8xl sm:text-7xl text-5xl font-bold">317</span>+

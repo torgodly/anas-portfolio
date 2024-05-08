@@ -13,6 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                somar: ["Somar"],
             },
             colors: {
                 "snapchat-yellow": "#FFFC00",

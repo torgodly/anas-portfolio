@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Somar";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("../../public/assets/fonts/ArbFONTS-Somar-Medium.otf")
+            format("woff2");
+    }
+    @font-face {
+        font-family: "Somar";
+        font-style: bold;
+        font-weight: 700;
+        font-display: swap;
+        src: url("../../public/assets/fonts/ArbFONTS-Somar-Bold.otf")
+            format("woff2");
+    }
+    @font-face {
+        font-family: "Somar";
+        font-style: thin;
+        font-weight: 200;
+        font-display: swap;
+        src: url("../../public/assets/fonts/ArbFONTS-Somar-Thin.otf")
+            format("woff2");
+    }
+}
