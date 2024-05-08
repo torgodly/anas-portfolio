@@ -9,7 +9,7 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/snapchat-lenses', function () {
     //if there is category in the url then filter the lenses by category
-    $lenses = \App\Models\Len::all();
+    $lenses = \App\Models\Len::orderBy('created_at', 'desc')->get();
     if (request('category')) {
         $lenses = \App\Models\Len::where('category', request('category'))->get();
     }
@@ -17,8 +17,8 @@ Route::get('/snapchat-lenses', function () {
 })->name('snapchat-lenses');
 
 Route::get('/filesandvideos', function () {
-    $files = \App\Models\Post::where('type', 'post')->get();
-    $videos = \App\Models\Post::where('type', 'video')->get();
+    $files = \App\Models\Post::where('type', 'post')->orderBy('created_at', 'desc')->get();
+    $videos = \App\Models\Post::where('type', 'video')->orderBy('created_at', 'desc')->get();
     return view('FilesAndVideos', compact('files', 'videos'));
 })->name('filesandvideos');
 Route::get('/contact', function () {
