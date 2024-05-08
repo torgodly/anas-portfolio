@@ -8,7 +8,7 @@
 
         <section class="grid gap-6 md:gap-8">
             <div class="mx-auto h-96 w-[80%] rounded-3xl bg-snapchat-yellow">
-                <img class="h-96 w-full rounded-xl object-cover" src="{{ asset('storage/' . $post->image) }}">
+                <img class="h-96 w-full rounded-xl object-contain" src="{{ asset('storage/' . $post->image) }}">
             </div>
             <div class="grid gap-6 md:gap-8">
 
