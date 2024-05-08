@@ -3,17 +3,19 @@
         <article class="space-y-8 sm:space-y-8 xl:space-y-12">
             <div class="flex flex-col-reverse gap-6 md:flex-row md:gap-8 xl:gap-12">
                 {{-- Welcome Message --}}
-                <div class="flex flex-col rounded-3xl bg-white p-4 text-black sm:p-10 md:w-3/5">
+                <div class="flex flex-col rounded-3xl bg-white p-4 text-black sm:p-10 md:w-4/6">
                     <p class="font-smooch text-6xl md:text-7xl xl:text-8xl">
                         {{ $user?->welcome_message }}
                     </p>
-                    <a class="mt-6 self-start rounded-3xl bg-black px-14 py-2 font-somar text-xl text-white sm:text-3xl md:mt-10 lg:mt-16 xl:mt-20 xl:text-4xl"
+                    <a class="xl:mt-18 mt-6 self-start rounded-3xl bg-black px-14 py-2 font-somar text-xl text-white sm:text-3xl md:mt-10 lg:mt-12 xl:text-4xl"
                         href="{{ route('snapchat-lenses') }}">
                         See Lenses
                     </a>
                 </div>
                 {{-- Profile Picture --}}
-                <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
+                {{-- <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
+                    alt="Profile Picture" /> --}}
+                <img class="size-fit aspect-square md:w-2/6" src="{{ asset('assets/Profile Picture.png') }}"
                     alt="Profile Picture" />
 
             </div>
@@ -45,15 +47,15 @@
                 {{-- Persoanl Information --}}
                 <div class="mt-8 space-y-4 md:mt-0 md:w-[35%]">
                     <div
-                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
+                        class="md:h-18 grid h-14 content-center rounded-3xl bg-white p-3 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:text-4xl xl:h-20 xl:text-5xl">
                         <p>Anas El-Ferjani</p>
                     </div>
                     <div
-                        class="text-nowrap grid h-16 content-center rounded-3xl bg-snapchat-yellow p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
+                        class="text-nowrap md:h-18 grid h-14 content-center rounded-3xl bg-snapchat-yellow p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:text-4xl xl:h-20 xl:text-5xl">
                         <p>Snapchat Lens Creator</p>
                     </div>
                     <div
-                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
+                        class="md:h-18 grid h-14 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:text-4xl xl:h-20 xl:text-5xl">
                         <p>Graphic Designer</p>
                     </div>
                     {{-- Social Media Links --}}
