@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,13 +16,20 @@ Route::get('/snapchat-lenses', function () {
     return view('SnapchatLenses', compact('lenses'));
 })->name('snapchat-lenses');
 
-Route::view('/filesandvideos', 'FilesAndVideos')->name('filesandvideos');
+Route::get('/filesandvideos', function () {
+    $files = \App\Models\Post::where('type', 'post')->get();
+    $videos = \App\Models\Post::where('type', 'video')->get();
+    return view('FilesAndVideos', compact('files', 'videos'));
+})->name('filesandvideos');
 Route::view('/contact', 'Contact')->name('contact');
-Route::view('/len/id', 'show')->name('len.show');
+
+Route::get('/files/{post}', function (Post $post) {
+    return view('show', compact('post'));
+})->name('file.show');
 
 
 Route::view('profile', 'profile')
-   ->middleware(['auth'])
-   ->name('profile');
+    ->middleware(['auth'])
+    ->name('profile');
 
 //require __DIR__.'/auth.php';

@@ -39,10 +39,10 @@ class LenResource extends Resource
                 ->columnSpanFull()
                 ,
                 Forms\Components\FileUpload::make('cover_image')
-                    ->image()
+//                    ->image()
                     ->required(),
                 Forms\Components\FileUpload::make('code_image')
-                    ->image()
+//                    ->image()
                     ->required(),
             ]);
     }

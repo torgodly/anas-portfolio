@@ -18,7 +18,7 @@
                             alt=""></a>
                 </div>
 
-                <div class="flex justify-center gap-3 md:mt-20 mt-14">
+                <div class="flex justify-center gap-3 ">
                     <a href="#"
                         class="md:h-24 sm:h-[90px] h-16 bg-white rounded-2xl flex content-center p-4 aspect-square"><img
                             src="{{ asset('assets/Snapchat.png') }}" alt=""></a>
@@ -35,8 +35,8 @@
             </div>
 
             <div class="w-full grid">
-                <div class="space-y-6">
-                    <section class="grid md:grid-cols-2 md:gap-4 gap-6">
+                <div class="space-y-6 flex justify-center items-center flex-col">
+                    <section class="grid md:grid-cols-2 md:gap-4 gap-6 w-full">
 
                         <input placeholder="Name" class="border-2 h-12 border-white bg-black rounded-2xl" type="text"
                             name="name" id="name">
@@ -48,9 +48,11 @@
                         type="text" name="subject" id="subject">
                     <textarea placeholder="Message" class="border-2 w-full border-white bg-black rounded-2xl" name="message" id="message"
                         cols="30" rows="10"></textarea>
+
+                    <button
+                        class="bg-snapchat-yellow text-black rounded-2xl px-16 py-10 text-3xl font-bold text-center mx-auto mt-14">Send</button>
                 </div>
-                <button
-                    class="bg-snapchat-yellow text-black rounded-2xl px-16 text-3xl font-bold text-center mx-auto mt-14">Send</button>
+
             </div>
         </article>
 
