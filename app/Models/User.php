@@ -20,6 +20,16 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'profile_picture',
+        'welcome_message',
+        'years_of_experience',
+        'plays',
+        'telegram',
+        'whatsapp',
+        'snapchat',
+        'twitter',
+        'instagram',
+        'discord',
     ];
 
     /**
