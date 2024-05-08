@@ -14,11 +14,14 @@ Route::get('/snapchat-lenses', function () {
     }
     return view('SnapchatLenses', compact('lenses'));
 })->name('snapchat-lenses');
+
 Route::view('/filesandvideos', 'FilesAndVideos')->name('filesandvideos');
 Route::view('/contact', 'Contact')->name('contact');
+Route::view('/len/id', 'show')->name('len.show');
 
-//Route::view('profile', 'profile')
-//    ->middleware(['auth'])
-//    ->name('profile');
+
+Route::view('profile', 'profile')
+   ->middleware(['auth'])
+   ->name('profile');
 
 //require __DIR__.'/auth.php';
