@@ -5,8 +5,8 @@
 @layer base {
     @font-face {
         font-family: "Somar";
-        font-style: normal;
-        font-weight: 400;
+        font-style: medium;
+        font-weight: 500;
         font-display: swap;
         src: url("../../public/assets/fonts/ArbFONTS-Somar-Medium.otf")
             format("woff2");
@@ -22,9 +22,25 @@
     @font-face {
         font-family: "Somar";
         font-style: thin;
-        font-weight: 200;
+        font-weight: 100;
         font-display: swap;
         src: url("../../public/assets/fonts/ArbFONTS-Somar-Thin.otf")
+            format("woff2");
+    }
+    @font-face {
+        font-family: "Somar";
+        font-style: light;
+        font-weight: 300;
+        font-display: swap;
+        src: url("../../public/assets/fonts/ArbFONTS-Somar-Light.otf")
+            format("woff2");
+    }
+    @font-face {
+        font-family: "Smooch Sans";
+        font-style: medium;
+        font-weight: 500;
+        font-display: swap;
+        src: url("../../public/assets/fonts/SmoochSans-Medium.ttf")
             format("woff2");
     }
 }

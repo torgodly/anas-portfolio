@@ -14,6 +14,7 @@ export default {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 somar: ["Somar"],
+                smooch: ["Smooch Sans"],
             },
             colors: {
                 "snapchat-yellow": "#FFFC00",

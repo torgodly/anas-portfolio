@@ -11,7 +11,7 @@
             <div class="grid md:gap-8 gap-6">
                 <div class="bg-snapchat-yellow rounded-3xl w-[80%] h-96 mx-auto"></div>
                 <div class="bg-white bg-opacity-20 grid items-start rounded-3xl h-[600px] w-full mx-auto p-10 text-2xl text-center ">
-                    <p class="md:p-10 p-4 text-2xl md:text-4xl">Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses</p>
+                    <p class="md:p-10 p-4 text-2xl md:text-4xl font-somar font-medium">Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses Snapchat Lenses</p>
                     <p class="text-left mt-20 text-md md:text-xl self-end">02/05/2024</p>
                 </div>
             </div>
