@@ -1,6 +1,26 @@
 {
+  "public/assets/fonts/ArbFONTS-Somar-Bold.otf": {
+    "file": "assets/ArbFONTS-Somar-Bold-C8iuYu4L.otf",
+    "src": "public/assets/fonts/ArbFONTS-Somar-Bold.otf"
+  },
+  "public/assets/fonts/ArbFONTS-Somar-Light.otf": {
+    "file": "assets/ArbFONTS-Somar-Light-BvpCjFi7.otf",
+    "src": "public/assets/fonts/ArbFONTS-Somar-Light.otf"
+  },
+  "public/assets/fonts/ArbFONTS-Somar-Medium.otf": {
+    "file": "assets/ArbFONTS-Somar-Medium-CneYDe7c.otf",
+    "src": "public/assets/fonts/ArbFONTS-Somar-Medium.otf"
+  },
+  "public/assets/fonts/ArbFONTS-Somar-Thin.otf": {
+    "file": "assets/ArbFONTS-Somar-Thin-u7iHgKsZ.otf",
+    "src": "public/assets/fonts/ArbFONTS-Somar-Thin.otf"
+  },
+  "public/assets/fonts/SmoochSans-Medium.ttf": {
+    "file": "assets/SmoochSans-Medium-Yd6NBrrq.ttf",
+    "src": "public/assets/fonts/SmoochSans-Medium.ttf"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-Dh_3G7zZ.css",
+    "file": "assets/app-Be2xKcDg.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
