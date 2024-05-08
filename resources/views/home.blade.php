@@ -45,15 +45,15 @@
                 {{-- Persoanl Information --}}
                 <div class="mt-8 space-y-4 md:mt-0 md:w-[35%]">
                     <div
-                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-5xl">
+                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
                         <p>Anas El-Ferjani</p>
                     </div>
                     <div
-                        class="text-nowrap grid h-16 content-center rounded-3xl bg-snapchat-yellow p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-5xl">
+                        class="text-nowrap grid h-16 content-center rounded-3xl bg-snapchat-yellow p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
                         <p>Snapchat Lens Creator</p>
                     </div>
                     <div
-                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-5xl">
+                        class="grid h-16 content-center rounded-3xl bg-white p-4 text-center font-somar text-3xl font-medium text-black sm:h-[68px] sm:text-4xl md:h-20 md:text-4xl xl:text-5xl">
                         <p>Graphic Designer</p>
                     </div>
                     {{-- Social Media Links --}}
