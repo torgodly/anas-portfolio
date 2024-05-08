@@ -13,10 +13,9 @@
                     </a>
                 </div>
                 {{-- Profile Picture --}}
-                {{-- <img src="{{ asset('storage/'.$user->profile_picture) }}" class="md:w-2/5 aspect-square size-fit"
-                    alt="Profile Picture" /> --}}
-                <img class="size-fit aspect-square md:w-2/5" src="{{ asset('assets/Profile Picture.png') }}"
+                <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
                     alt="Profile Picture" />
+
             </div>
 
             <div class="md:flex md:justify-between md:gap-8 xl:gap-12">
@@ -26,13 +25,13 @@
 
                     <p class="text-nowrap font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
                         <span
-                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">3{{ $user?->years_of_experience }}
+                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->years_of_experience }}
                         </span>Years of Experience
                     </p>
 
                     <p class="font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
                         <span
-                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">347{{ $user?->plays }}</span>+
+                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->plays }}</span>+
                         Million Plays
                     </p>
 
@@ -61,7 +60,6 @@
                     <div class="flex justify-between sm:justify-center sm:gap-8 md:justify-between md:gap-0">
                         <x-social-media-icon name='snapchat' href="{{ $user?->snapchat }}"
                             imageUrl="{{ asset('assets/Snapchat.png') }}"></x-social-media-icon>
-
                         <x-social-media-icon name='twitter' href="{{ $user?->twitter }}"
                             imageUrl="{{ asset('assets/Twitter.png') }}"></x-social-media-icon>
                         <x-social-media-icon name='instagram' href="{{ $user?->instagram }}"
