@@ -17,6 +17,8 @@ return new class extends Migration {
             $table->string('welcome_message')->nullable();
             $table->integer('years_of_experience')->nullable();
             $table->integer('plays')->nullable();
+            $table->string('telegram')->nullable();
+            $table->string('whatsapp')->nullable();
             $table->string('snapchat')->nullable();
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();

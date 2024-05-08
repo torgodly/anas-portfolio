@@ -36,7 +36,7 @@ new class extends Component {
 
         <div class="flex md:order-2 space-x-3 md:space-x-4 lg:space-x-0 rtl:space-x-reverse">
             <a  href="{{route('contact')}}"
-                    class="text-black bg-snapchat-yellow transition-all hover:bg-snapchat-yellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:text-lg px-4 py-2 text-center">
+                    class=" flex justify-center items-center text-black bg-snapchat-yellow transition-all hover:bg-snapchat-yellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:text-lg px-4 py-2 text-center">
                 Contact
                 Me
             </a>

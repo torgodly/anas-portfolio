@@ -17,7 +17,7 @@ class About extends Page implements HasForms
 {
     use InteractsWithForms;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $navigationIcon = 'heroicon-o-megaphone';
 
     protected static string $view = 'filament.pages.about';
 
@@ -45,6 +45,12 @@ class About extends Page implements HasForms
                     ->required()
                     ->columns(1)
                     ->numeric(),
+                TextInput::make('telegram')
+                    ->prefixIcon('tabler-brand-telegram')
+                    ->required(),
+                TextInput::make('whatsapp')
+                    ->prefixIcon('tabler-brand-whatsapp')
+                    ->required(),
                 TextInput::make('snapchat')
                     ->prefixIcon('tabler-brand-snapchat')
                     ->required(),

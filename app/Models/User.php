@@ -24,6 +24,8 @@ class User extends Authenticatable
         'welcome_message',
         'years_of_experience',
         'plays',
+        'telegram',
+        'whatsapp',
         'snapchat',
         'twitter',
         'instagram',

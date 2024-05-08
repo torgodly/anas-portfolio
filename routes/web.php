@@ -21,7 +21,22 @@ Route::get('/filesandvideos', function () {
     $videos = \App\Models\Post::where('type', 'video')->get();
     return view('FilesAndVideos', compact('files', 'videos'));
 })->name('filesandvideos');
-Route::view('/contact', 'Contact')->name('contact');
+Route::get('/contact', function () {
+
+    $user = \App\Models\User::first();
+    return view('Contact', compact('user'));
+})->name('contact');
+
+Route::post('/contact', function () {
+    $data = request()->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        'subject' => 'required',
+        'message' => 'required',
+    ]);
+    \App\Models\Contact::create($data);
+    return back()->with('message', 'We received your message successfully, we will get back to you soon');
+})->name('contact.store');
 
 Route::get('/files/{post}', function (Post $post) {
     return view('show', compact('post'));

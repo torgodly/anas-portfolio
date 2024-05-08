@@ -32,16 +32,88 @@
         </ul>
 
         @if ($lenses->count() > 0)
-            <section class="mt-32 mb-40 grid grid-cols-3 gap-x-6 gap-y-40">
+            <section class="mt-32 mb-40 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-40 mx-auto ">
                 @foreach ($lenses as $lens)
                     <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
                         <div class="h-[550px] bg-white rounded-3xl relative">
                             <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
-                                class="w-full h-full rounded-3xl">
+                                 class="w-full h-full rounded-3xl">
                             <div
                                 class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
                                 <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
-                                    class="w-40 h-40 rounded-3xl mb-4">
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
+                                <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
+                                    {{ $lens->name }}</p>
+                            </div>
+                        </div>
+                    </a>              <a href="{{ $lens->link }}" class="relative overflow-visible block w-full max-w-[550px] mx-auto">
+                        <div class="h-[550px] bg-white rounded-3xl relative">
+                            <img src="{{ asset('storage/' . $lens->cover_image) }}" alt="lens"
+                                 class="w-full h-full rounded-3xl">
+                            <div
+                                class="absolute left-1/2 -bottom-32 -translate-x-1/2 flex flex-col items-center w-full">
+                                <img src="{{ asset('storage/' . $lens->code_image) }}" alt="lens"
+                                     class="w-40 h-40 rounded-3xl mb-4">
                                 <p class="text-white text-center text-4xl max-w-full px-4 overflow-wrap break-all">
                                     {{ $lens->name }}</p>
                             </div>
