@@ -59,7 +59,7 @@
                         <p>Graphic Designer</p>
                     </div>
                     {{-- Social Media Links --}}
-                    <div class="flex justify-between sm:justify-center sm:gap-8 md:justify-between md:gap-0">
+                    <div class="flex justify-between sm:justify-center sm:gap-8 md:justify-between md:gap-0 xl:gap-2">
                         <x-social-media-icon name='snapchat' href="{{ $user?->snapchat }}"
                             imageUrl="{{ asset('assets/Snapchat.png') }}"></x-social-media-icon>
                         <x-social-media-icon name='twitter' href="{{ $user?->twitter }}"
