@@ -1,13 +1,13 @@
 <x-app-layout>
     <main class="mt-6 md:mx-10 w-fit mx-4">
-        <article class="sm:space-y-14 space-y-8">
+        <article class="sm:space-y-8 xl:space-y-12 space-y-8">
 
-            <div class="md:flex-row flex flex-col-reverse md:gap-14 gap-6">
+            <div class="md:flex-row flex flex-col-reverse md:gap-8 xl:gap-12 gap-6">
                 {{-- Welcome Message --}}
-                <div class="bg-white rounded-3xl md:w-3/5 sm:p-10 p-4 grid text-black">
+                <div class="bg-white rounded-3xl md:w-3/5 sm:p-10 p-4 flex flex-col text-black">
                     <p class="md:text-7xl xl:text-8xl text-6xl font-smooch">Hi, I'm Anas and this is my work gallery</p>
-                    <button <button
-                        class="bg-black rounded-3xl md:px-8 mt-6 sm:text-3xl xl:text-4xl text-xl font-somar justify-self-start  text-white">See
+                    <button
+                        class="bg-black self-start mt-6 md:mt-10 lg:mt-16 xl:mt-20 px-14 py-2 rounded-3xl sm:text-3xl xl:text-4xl text-xl font-somar  text-white">See
                         Lenses</button>
                 </div>
                 {{-- Profile Picture --}}
@@ -15,7 +15,7 @@
                     alt="Profile Picture">
             </div>
 
-            <div class="md:flex md:justify-between md:gap-14">
+            <div class="md:flex md:justify-between xl:gap-12 md:gap-8">
                 {{-- Experience Level --}}
                 <div
                     class="bg-white bg-opacity-15 border-4 grid relative border-white rounded-3xl md:w-[65%] p-6 text-black">
@@ -30,7 +30,7 @@
                         class="absolute md:w-36 w-20 md:right-0 sm:right-[6%] right-0 md:top-1/2 top-2/3 -translate-y-1/2"
                         alt="">
                     <button
-                        class="bg-white rounded-3xl md:px-8 mt-6 sm:text-3xl xl:text-4xl text-xl font-somar justify-self-center text-black">See
+                        class="bg-white self-center rounded-3xl px-14 py-2 mt-6 sm:text-3xl xl:text-4xl text-xl font-somar justify-self-center text-black">See
                         Lenses
                     </button>
                 </div>
@@ -50,18 +50,11 @@
                     </div>
                     {{-- Social Media Links --}}
                     <div class="flex justify-between">
-                        <a href="#"
-                            class="xl:h-24 md:h-16 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                                src="{{ asset('assets/Snapchat.png') }}" alt=""></a>
-                        <a href="#"
-                            class="xl:h-24 md:h-16 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                                src="{{ asset('assets/Twitter.png') }}" alt=""></a>
-                        <a href="#"
-                            class="xl:h-24 md:h-16 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                                src="{{ asset('assets/Instagram.png') }}" alt=""></a>
-                        <a href="#"
-                            class="xl:h-24 md:h-16 sm:h-[90px] h-[70px] bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                                src="{{ asset('assets/Discord.png') }}" alt=""></a>
+                        <x-social-media-icon imageUrl="{{ asset('assets/Snapchat.png') }}" name='snapchat'></x-social-media-icon>
+                        <x-social-media-icon imageUrl="{{ asset('assets/Twitter.png') }}" name='twitter'></x-social-media-icon>
+                        <x-social-media-icon imageUrl="{{ asset('assets/Instagram.png') }}" name='instagram'></x-social-media-icon>
+                        <x-social-media-icon imageUrl="{{ asset('assets/Discord.png') }}" name='discord'></x-social-media-icon>
+
                     </div>
                 </div>
             </div>

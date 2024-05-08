@@ -12,25 +12,22 @@
 
                 <p class="my-6 mt-10">Contact me on:</p>
                 <div class="flex items-center justify-center gap-4 mb-20">
-                    <a href="#" class="md:h-16 h-10 aspect-square"><img src="{{ asset('assets/telegram.png') }}"
+                    <a href="#" target="_blank" class="md:h-16 h-10 aspect-square"><img src="{{ asset('assets/telegram.png') }}"
                             alt=""></a>
-                    <a href="#" class="md:h-16 h-10 aspect-square"><img src="{{ asset('assets/whatsapp.png') }}"
+                    <a href="#" target="_blank" class="md:h-16 h-10 aspect-square"><img src="{{ asset('assets/whatsapp.png') }}"
                             alt=""></a>
                 </div>
 
                 <div class="flex justify-center gap-3 md:mt-20 mt-14">
-                    <a href="#"
+                    {{-- <a href="#"
                         class="md:h-24 sm:h-[90px] h-16 bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                            src="{{ asset('assets/Snapchat.png') }}" alt=""></a>
-                    <a href="#"
-                        class="md:h-24 sm:h-[90px] h-16 bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                            src="{{ asset('assets/Twitter.png') }}" alt=""></a>
-                    <a href="#"
-                        class="md:h-24 sm:h-[90px] h-16 bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                            src="{{ asset('assets/Instagram.png') }}" alt=""></a>
-                    <a href="#"
-                        class="md:h-24 sm:h-[90px] h-16 bg-white rounded-2xl flex content-center p-4 aspect-square"><img
-                            src="{{ asset('assets/Discord.png') }}" alt=""></a>
+                            src="{{ asset('assets/Snapchat.png') }}" alt=""></a> --}}
+
+                            <x-social-media-icon imageUrl="{{ asset('assets/Snapchat.png') }}" name='snapchat'></x-social-media-icon>
+                            <x-social-media-icon imageUrl="{{ asset('assets/Twitter.png') }}" name='twitter'></x-social-media-icon>
+                            <x-social-media-icon imageUrl="{{ asset('assets/Instagram.png') }}" name='instagram'></x-social-media-icon>
+                            <x-social-media-icon imageUrl="{{ asset('assets/Discord.png') }}" name='discord'></x-social-media-icon>
+
                 </div>
             </div>
 
