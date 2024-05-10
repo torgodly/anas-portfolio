@@ -1,7 +1,7 @@
 <x-app-layout>
     <main class="mx-4 mt-6 w-fit md:mx-10">
         <article class="space-y-8 sm:space-y-8 xl:space-y-12">
-            <div class="flex flex-col-reverse gap-6 md:flex-row md:gap-8 xl:gap-12">
+            <div class="flex flex-col gap-6 md:flex-row md:gap-8 xl:gap-12">
                 {{-- Welcome Message --}}
                 <div class="flex flex-col rounded-3xl bg-white p-4 text-black sm:p-10 md:w-4/6">
                     <p class="font-smooch text-6xl md:text-7xl xl:text-6xl">
