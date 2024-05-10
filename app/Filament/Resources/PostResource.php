@@ -11,8 +11,6 @@ use Filament\Forms\Get;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class PostResource extends Resource
 {
@@ -35,14 +33,20 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->columnSpanFull()
-                    ->visible(fn (Get $get) => $get('type') != 'video')
+                    ->visible(fn(Get $get) => $get('type') != 'video')
                     ->maxLength(255),
+                Forms\Components\Textarea::make('excerpt')
+                    ->visible(fn(Get $get) => $get('type') != 'video')
+                    ->rows(10)
+                    ->columnSpanFull()
+                    ->required()
+                ,
                 Forms\Components\RichEditor::make('content')
-                    ->visible(fn (Get $get) => $get('type') != 'video')
+                    ->visible(fn(Get $get) => $get('type') != 'video')
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
-                    ->visible(fn (Get $get) => $get('type') != 'video')
+                    ->visible(fn(Get $get) => $get('type') != 'video')
                     ->image()
                     ->columnSpanFull()
                     ->required(),

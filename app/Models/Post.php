@@ -12,15 +12,16 @@ class Post extends Model
     protected $fillable = [
         'type',
         'title',
+        'excerpt',
         'content',
         'image',
         'link',
     ];
 
     //excerpt
-    public function getExcerptAttribute()
-    {
-        return substr($this->content, 0, 200);
-    }
+//    public function getExcerptAttribute()
+//    {
+//        return substr($this->content, 0, 200);
+//    }
 
 }

@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->enum('type', ['post', 'video']);
             $table->string('title')->nullable();
             $table->text('content')->nullable();
+            $table->text('excerpt')->nullable();
             $table->string('image')->nullable();
             $table->string('link');
             $table->timestamps();
