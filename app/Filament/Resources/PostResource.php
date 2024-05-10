@@ -37,8 +37,7 @@ class PostResource extends Resource
                     ->columnSpanFull()
                     ->visible(fn (Get $get) => $get('type') != 'video')
                     ->maxLength(255),
-                Forms\Components\Textarea::make('content')
-                    ->rows(10)
+                Forms\Components\RichEditor::make('content')
                     ->visible(fn (Get $get) => $get('type') != 'video')
                     ->required()
                     ->columnSpanFull(),

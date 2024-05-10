@@ -15,36 +15,13 @@
                 {{-- Profile Picture --}}
                 {{-- <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
                     alt="Profile Picture" /> --}}
-                <img class="size-fit aspect-square md:w-2/6" src="{{ asset('assets/Profile Picture.png') }}"
+                <img class="size-fit aspect-square md:w-2/6 object-contain" src="{{ asset('assets/Profile Picture.png') }}"
                      alt="Profile Picture"/>
 
             </div>
 
-            <div class="md:flex md:justify-between md:gap-8 xl:gap-12">
+            <div class="md:flex md:justify-between md:flex-row-reverse    md:gap-8 xl:gap-12">
                 {{-- Experience Level --}}
-                <div
-                    class="bg-opacity-15 relative grid rounded-3xl border-4 border-white bg-white p-5 text-black sm:p-6 md:w-[65%]">
-
-                    <p class="text-nowrap font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
-                        <span
-                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->years_of_experience }}
-                        </span>Years of Experience
-                    </p>
-
-                    <p class="font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
-                        <span
-                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->plays }}</span>+
-                        Million Plays
-                    </p>
-
-                    <img
-                        class="absolute right-0 top-2/3 w-20 -translate-y-1/2 sm:right-[6%] md:right-0 md:top-2/3 md:w-28"
-                        src="{{ asset('assets/Snapchat-Rotated.png') }}" alt=""/>
-                    <a class="mt-6 self-center justify-self-center rounded-3xl bg-white px-14 py-2 font-somar text-xl text-black sm:text-3xl xl:text-4xl"
-                       href="{{ route('snapchat-lenses') }}">
-                        See Lenses
-                    </a>
-                </div>
                 {{-- Persoanl Information --}}
                 <div class="mt-8 space-y-4 md:mt-0 md:w-[35%]">
                     <div
@@ -71,6 +48,30 @@
                                              imageUrl="{{ asset('assets/Discord.png') }}"></x-social-media-icon>
                     </div>
                 </div>
+                <div
+                    class="bg-opacity-15 relative grid rounded-3xl border-4 border-white bg-white p-5 text-black sm:p-6 md:w-[65%] mt-8 md:mt-0 ">
+
+                    <p class="text-nowrap font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
+                        <span
+                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->years_of_experience }}
+                        </span>Years of Experience
+                    </p>
+
+                    <p class="font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
+                        <span
+                            class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->plays }}</span>+
+                        Million Plays
+                    </p>
+
+                    <img
+                        class="absolute right-0 top-2/3 w-20 -translate-y-1/2 sm:right-[6%] md:right-0 md:top-2/3 md:w-28"
+                        src="{{ asset('assets/Snapchat-Rotated.png') }}" alt=""/>
+                    <a class="mt-6 self-center justify-self-center rounded-3xl bg-white px-14 py-2 font-somar text-xl text-black sm:text-3xl xl:text-4xl"
+                       href="{{ route('snapchat-lenses') }}">
+                        See Lenses
+                    </a>
+                </div>
+
             </div>
         </article>
         {{-- Skills Progress bar --}}

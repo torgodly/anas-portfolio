@@ -29,7 +29,7 @@
         @if ($lenses->count() > 0)
             <section class="mx-auto mb-40 mt-32 grid grid-cols-1 gap-x-6 gap-y-40 md:grid-cols-3">
                 @foreach ($lenses as $lens)
-                    <a class="relative mx-auto block w-full max-w-[550px] overflow-visible" href="{{ $lens->link }}">
+                    <a class="relative mx-auto block w-full max-w-[550px] overflow-visible" href="{{ $lens->link }}" target="_blank">
                         <div class="relative h-[550px] rounded-3xl bg-white">
                             <img class="h-full w-full rounded-3xl" src="{{ asset('storage/' . $lens->cover_image) }}"
                                 alt="lens">
@@ -37,8 +37,9 @@
                                 class="absolute -bottom-32 left-1/2 flex w-full -translate-x-1/2 flex-col items-center">
                                 <img class="mb-4 h-40 w-40 rounded-3xl"
                                     src="{{ asset('storage/' . $lens->code_image) }}" alt="lens">
-                                <p class="overflow-wrap max-w-full break-all px-4 text-center text-4xl text-white">
-                                    {{ $lens->name }}</p>
+                                <p class="overflow-wrap max-w-full break-all px-4 text-center text-2xl text-white">
+                                    AR PIANO GAME
+                                </p>
                             </div>
                         </div>
                     </a>
