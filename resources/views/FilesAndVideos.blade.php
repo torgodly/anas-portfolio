@@ -12,7 +12,7 @@
                     href="{{ route('file.show', $file) }}" wire:navigate>
                     <div class="grid p-2">
                         <h3 class="text-4xl font-bold md:text-5xl">{{ $file->title }}</h3>
-                        <p class="mt-4 text-xl md:text-2xl">{{ $file->excerpt }}</p>
+                        <p class="mt-4 text-xl md:text-2xl">{!! $file->excerpt !!}</p>
                         <p class="mt-8 text-xl md:text-2xl">{{ $file->created_at->format('d/m/Y') }}</p>
                     </div>
                     <div class="mt-4 aspect-square h-64 rounded-3xl bg-snapchat-yellow md:mt-0">

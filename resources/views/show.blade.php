@@ -11,7 +11,7 @@
             </div>
             <div class="grid gap-6 md:gap-8">
                 <div
-                    class="mx-auto grid h-fit w-full items-start rounded-3xl bg-white bg-opacity-20 p-3 text-center text-2xl md:p-10">
+                    class="mx-auto grid h-fit w-full items-start rounded-3xl bg-white bg-opacity-20 p-3 text-2xl md:p-10" dir="auto">
                     <p class="p-4 font-somar text-2xl font-medium md:p-10 md:text-4xl">{!! $post->content !!}</p>
                     <p class="text-md mt-20 self-end text-left md:text-xl">{{ $post->created_at->format('d/m/Y') }}</p>
                 </div>
