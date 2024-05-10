@@ -38,7 +38,7 @@
                     </p>
 
                     <img
-                        class="absolute right-0 top-2/3 w-20 -translate-y-1/2 sm:right-[6%] md:right-0 md:top-1/2 md:w-36"
+                        class="absolute right-0 top-2/3 w-20 -translate-y-1/2 sm:right-[6%] md:right-0 md:top-2/3 md:w-28"
                         src="{{ asset('assets/Snapchat-Rotated.png') }}" alt=""/>
                     <a class="mt-6 self-center justify-self-center rounded-3xl bg-white px-14 py-2 font-somar text-xl text-black sm:text-3xl xl:text-4xl"
                        href="{{ route('snapchat-lenses') }}">
