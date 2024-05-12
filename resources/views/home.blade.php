@@ -79,7 +79,7 @@
                      src="{{ asset('assets/Lens.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-snapchat-yellow">
-                        <div class="m-1 h-3 w-[90%]  rounded-full bg-black"></div>
+                        <div class="m-1 h-3 w-[90%]  rounded-full bg-[#6D5F03]"></div>
                     </div>
                 </div>
             </div>
