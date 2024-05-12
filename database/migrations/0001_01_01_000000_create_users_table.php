@@ -22,7 +22,7 @@ return new class extends Migration {
             $table->string('snapchat')->nullable();
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();
-            $table->string('discord')->nullable();
+            $table->string('youtube')->nullable();
             $table->text('about')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

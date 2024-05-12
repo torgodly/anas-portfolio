@@ -60,8 +60,8 @@ class About extends Page implements HasForms
                 TextInput::make('instagram')
                     ->prefixIcon('tabler-brand-instagram')
                     ->required(),
-                TextInput::make('discord')
-                    ->prefixIcon('tabler-brand-discord')
+                TextInput::make('youtube')
+                    ->prefixIcon('tabler-brand-youtube')
                     ->required(),
                 FileUpload::make('profile_picture')
                     ->columnSpanFull()

@@ -12,7 +12,8 @@
                 {{-- Profile Picture --}}
                 {{-- <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
                     alt="Profile Picture" /> --}}
-                <img class="size-fit aspect-square md:w-2/6 object-contain" src="{{ asset('storage/'.$user?->profile_picture) }}"
+                <img class="size-fit aspect-square md:w-2/6 object-contain"
+                     src="{{ asset('storage/'.$user?->profile_picture) }}"
                      alt="Profile Picture"/>
 
             </div>
@@ -41,8 +42,8 @@
                                              imageUrl="{{ asset('assets/Twitter.png') }}"></x-social-media-icon>
                         <x-social-media-icon name='instagram' href="{{ $user?->instagram }}"
                                              imageUrl="{{ asset('assets/Instagram.png') }}"></x-social-media-icon>
-                        <x-social-media-icon name='discord' href="{{ $user?->discord }}"
-                                             imageUrl="{{ asset('assets/Discord.png') }}"></x-social-media-icon>
+                        <x-social-media-icon name='discord' href="{{ $user?->youtube }}"
+                                             imageUrl="{{ asset('assets/youtube.png') }}"></x-social-media-icon>
                     </div>
                 </div>
                 <div

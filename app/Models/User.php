@@ -29,7 +29,7 @@ class User extends Authenticatable
         'snapchat',
         'twitter',
         'instagram',
-        'discord',
+        'youtube',
     ];
 
     /**
