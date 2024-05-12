@@ -7,10 +7,7 @@
                     <p class="font-smooch text-6xl md:text-7xl xl:text-6xl">
                         {{ $user?->welcome_message }}
                     </p>
-                    <a class="xl:mt-18 mt-6 self-start rounded-3xl bg-black px-14 py-2 font-somar text-xl text-white sm:text-3xl md:mt-10 lg:mt-12 xl:text-4xl"
-                       href="{{ route('snapchat-lenses') }}">
-                        See Lenses
-                    </a>
+
                 </div>
                 {{-- Profile Picture --}}
                 {{-- <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
