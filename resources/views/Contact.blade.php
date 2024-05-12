@@ -26,8 +26,8 @@
                         imageUrl="{{ asset('assets/Twitter.png') }}"></x-social-media-icon>
                     <x-social-media-icon name='instagram' href="{{ $user?->instagram }}"
                         imageUrl="{{ asset('assets/Instagram.png') }}"></x-social-media-icon>
-                    <x-social-media-icon name='discord' href="{{ $user?->discord }}"
-                        imageUrl="{{ asset('assets/Discord.png') }}"></x-social-media-icon>
+                    <x-social-media-icon name='youtube' href="{{ $user?->youtube }}"
+                        imageUrl="{{ asset('assets/youtube.png') }}"></x-social-media-icon>
                 </div>
             </div>
 

@@ -64,7 +64,8 @@
                     <img
                         class="absolute right-0 top-2/3 w-20 -translate-y-1/2 sm:right-[20%] md:right-0 md:top-2/3 md:w-44 "
                         src="{{ asset('assets/Snapchat-Rotated.png') }}" alt=""/>
-                    <a class="mt-6 self-center justify-self-center rounded-3xl bg-white px-14 py-2 font-somar text-xl text-black sm:text-3xl xl:text-4xl"
+                    <a class="mt-6 self-center justify-self-center rounded-3xl bg-white px-14 py-2 font-somar text-xl text-black sm:text-3xl xl:text-4xl hover:bg-snapchat-yellow hover:shadow-snapchat-yellow hover:shadow-lg
+transition ease-in-out delay-100"
                        href="{{ route('snapchat-lenses') }}">
                         See Lenses
                     </a>
