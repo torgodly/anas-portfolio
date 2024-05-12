@@ -8,7 +8,7 @@
 
         <section class="grid gap-8">
             @foreach ($files as $file)
-                <a class="relative mx-auto flex flex-col-reverse items-center gap-4 rounded-3xl bg-gray-500 p-4 text-center md:flex-row md:justify-between md:gap-0 md:text-left"
+                <a class="relative mx-auto flex flex-col-reverse items-center gap-4 rounded-3xl bg-gray-500 p-4 text-center md:flex-row md:justify-between md:gap-0 md:text-left w-full"
                     href="{{ route('file.show', $file) }}" wire:navigate>
                     <div class="grid p-2">
                         <h3 class="text-4xl font-bold md:text-5xl">{{ $file->title }}</h3>
