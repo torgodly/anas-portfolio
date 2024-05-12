@@ -145,7 +145,7 @@
 
         {{-- About me section --}}
         <section
-            class="my-20 rounded-2xl border-2 border-white p-6 text-center text-lg leading-loose sm:p-10 sm:text-3xl">
+            class="font-somar my-20 rounded-2xl border-2 border-white p-6 text-center text-lg leading-loose sm:p-10 sm:text-3xl">
             Hello there! I'm Anas El-ferjani, a Snapchat lens creator. I design
             unique lenses that add a magical touch to your Snapchat photos and
             videos. Whether you're looking for stunning visual enhancements or
