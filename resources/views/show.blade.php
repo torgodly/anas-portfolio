@@ -6,8 +6,8 @@
 
     <article class="mx-4 mb-40 mt-16 grid max-w-7xl content-center md:mx-10">
         <section class="grid gap-6 md:gap-8">
-            <div class="mx-auto h-96 w-[80%] rounded-3xl ">
-                <img class="h-96 w-full rounded-xl object-contain" src="{{ asset('storage/' . $post->image) }}">
+            <div class="mx-auto h-96 w-fit  rounded-3xl ">
+                <img class="h-96 w-full rounded-xl object-contain " src="{{ asset('storage/' . $post->image) }}">
             </div>
             <div class="grid gap-6 md:gap-8">
                 <div
