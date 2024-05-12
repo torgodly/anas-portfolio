@@ -82,7 +82,7 @@
                      src="{{ asset('assets/Lens.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-snapchat-yellow">
-                        <div class="m-1 h-3 w-[90%] animate-pulse rounded-full bg-black"></div>
+                        <div class="m-1 h-3 w-[90%]  rounded-full bg-black"></div>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                      src="{{ asset('assets/Photoshop.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-photoshop-blue">
-                        <div class="m-1 h-3 w-[75%] animate-pulse rounded-full bg-white"></div>
+                        <div class="m-1 h-3 w-[75%]  rounded-full bg-white"></div>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                      src="{{ asset('assets/Illustrator.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-illustrator-orange">
-                        <div class="m-1 h-3 w-[97%] animate-pulse rounded-full bg-white"></div>
+                        <div class="m-1 h-3 w-[97%]  rounded-full bg-white"></div>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                      src="{{ asset('assets/Spline.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-photoshop-blue">
-                        <div class="m-1 h-3 w-[85%] animate-pulse rounded-full bg-white"></div>
+                        <div class="m-1 h-3 w-[85%]  rounded-full bg-white"></div>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                      src="{{ asset('assets/Blender.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-photoshop-blue bg-opacity-70">
-                        <div class="m-1 h-3 w-[50%] animate-pulse rounded-full bg-white"></div>
+                        <div class="m-1 h-3 w-[50%]  rounded-full bg-white"></div>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                      src="{{ asset('assets/Figma.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
                     <div class="h-5 w-full overflow-hidden rounded-full bg-figma-green">
-                        <div class="m-1 h-3 w-[97%] animate-pulse rounded-full bg-white"></div>
+                        <div class="m-1 h-3 w-[97%]  rounded-full bg-white"></div>
                     </div>
                 </div>
             </div>
