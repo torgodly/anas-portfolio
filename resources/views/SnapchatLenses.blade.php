@@ -27,7 +27,7 @@
         </ul>
 
         @if ($lenses->count() > 0)
-            <section class="mx-auto mb-40 mt-32 grid grid-cols-1 gap-x-6 gap-y-40 md:grid-cols-3">
+            <section class="mx-auto mb-40 mt-32 grid grid-cols-1 gap-x-6 gap-y-40 md:grid-cols-4">
                 @foreach ($lenses as $lens)
                     <a class="relative mx-auto block w-full max-w-[550px] overflow-visible" href="{{ $lens->link }}" target="_blank">
                         <div class="relative h-[550px] rounded-3xl bg-white">
