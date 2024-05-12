@@ -107,11 +107,11 @@
             </div>
 
             {{-- Spline --}}
-            <div class="relative w-full rounded-2xl bg-figma-green bg-opacity-10 p-8 sm:p-10">
+            <div class="relative w-full rounded-2xl bg-[#220454] bg-opacity-50 p-8 sm:p-10">
                 <img class="sm:w-[70px]sm:w-20 absolute left-5 top-1/2 z-10 w-16 -translate-y-1/2"
                      src="{{ asset('assets/Spline.png') }}" alt=""/>
                 <div class="flex items-center justify-center">
-                    <div class="h-5 w-full overflow-hidden rounded-full bg-photoshop-blue">
+                    <div class="h-5 w-full overflow-hidden rounded-full bg-[#43092A]">
                         <div class="m-1 h-3 w-[85%]  rounded-full bg-white"></div>
                     </div>
                 </div>
