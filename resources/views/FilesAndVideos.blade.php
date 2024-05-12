@@ -22,7 +22,7 @@
 
                 </a>
             @endforeach
-            {{--            <p class="text-2xl">View More</p> --}}
+                        <p class="text-2xl">{{$files->links()}}</p>
 
         </section>
 

@@ -17,7 +17,7 @@ Route::get('/snapchat-lenses', function () {
 })->name('snapchat-lenses');
 
 Route::get('/filesandvideos', function () {
-    $files = \App\Models\Post::where('type', 'post')->orderBy('created_at', 'desc')->get();
+    $files = \App\Models\Post::where('type', 'post')->orderBy('created_at', 'desc')->paginate(3);
     $videos = \App\Models\Post::where('type', 'video')->orderBy('created_at', 'desc')->get();
     return view('FilesAndVideos', compact('files', 'videos'));
 })->name('filesandvideos');

@@ -17,7 +17,7 @@
 
             <li class="{{ request('category') == '3D' ? 'border-b-2' : '' }} p-2 md:p-4">
                 <a class="font-somar font-light" href="{{ route('snapchat-lenses', ['category' => '3D']) }}"
-                    wire:navigate>3D Lenses</a>
+                    wire:navigate>3D & AR</a>
             </li>
 
             <li class="{{ request('category') == 'Games' ? 'border-b-2' : '' }} p-2 md:p-4">
