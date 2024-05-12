@@ -15,8 +15,8 @@
                         <p class="mt-4 text-xl md:text-2xl">{!! $file->excerpt !!}</p>
                         <p class="mt-8 text-xl md:text-2xl">{{ $file->created_at->format('d/m/Y') }}</p>
                     </div>
-                    <div class="mt-4 aspect-square h-64 rounded-3xl bg-snapchat-yellow md:mt-0">
-                        <img class="h-full w-full rounded-xl" src="{{ asset('storage/' . $file->image) }}"
+                    <div class="mt-4 aspect-square h-64 rounded-3xl  md:mt-0">
+                        <img class="object-contain rounded-xl" src="{{ asset('storage/' . $file->image) }}"
                             alt="">
                     </div>
 
