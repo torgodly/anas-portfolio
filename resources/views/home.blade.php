@@ -12,7 +12,7 @@
                 {{-- Profile Picture --}}
                 {{-- <img class="size-fit aspect-square md:w-2/5" src="{{ asset('storage/' . $user->profile_picture) }}"
                     alt="Profile Picture" /> --}}
-                <img class="size-fit aspect-square md:w-2/6 object-contain"
+                <img class="size-fit aspect-square md:w-2/6 object-contain rounded-3xl"
                      src="{{ asset('storage/'.$user?->profile_picture) }}"
                      alt="Profile Picture"/>
 
