@@ -38,7 +38,7 @@
                                 <img class="mb-4 h-40 w-40 rounded-3xl"
                                     src="{{ asset('storage/' . $lens->code_image) }}" alt="lens">
                                 <p class="overflow-wrap max-w-full break-all px-4 text-center text-2xl text-white">
-                                    AR PIANO GAME
+                                    {{ $lens->name}}
                                 </p>
                             </div>
                         </div>
