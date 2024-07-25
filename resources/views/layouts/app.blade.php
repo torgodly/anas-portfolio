@@ -6,6 +6,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="description" content="Anas El-Ferjani - Snapchat Lens Creator and Graphic Designer with 5 years of experience and over 622 million plays. Explore my portfolio, Snapchat lenses, and more.">
+    <meta name="keywords" content="Anas El-Ferjani, Snapchat Lenses, Graphic Designer, Portfolio, Snapchat Creator">
+    <meta name="author" content="Anas El-Ferjani">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{\App\Models\User::first()?->profile_picture}}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,6 +20,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
+
 <body class="font-sans antialiased bg-black text-white">
 <div class="min-h-screen ">
     <livewire:layout.navigation/>
