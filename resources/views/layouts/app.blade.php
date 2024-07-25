@@ -11,7 +11,7 @@
     <meta name="author" content="Anas El-Ferjani">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{\App\Models\User::first()?->profile_picture}}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('storage/'.\App\Models\User::first()?->profile_picture) }}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
