@@ -35,6 +35,7 @@ class LenResource extends Resource
                         '3D' => '3D',
                         'Beauty' => 'Beauty',
                         'Games' => 'Games',
+                        'ML' => 'ML',
                     ])
                 ->columnSpanFull()
                 ,

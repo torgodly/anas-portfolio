@@ -24,6 +24,10 @@
                 <a class="font-somar font-light" href="{{ route('snapchat-lenses', ['category' => 'Games']) }}"
                     wire:navigate>Games</a>
             </li>
+            <li class="{{ request('category') == 'ML' ? 'border-b-2' : '' }} p-2 md:p-4">
+                <a class="font-somar font-light" href="{{ route('snapchat-lenses', ['category' => 'ML']) }}"
+                   wire:navigate>ML</a>
+            </li>
         </ul>
 
         @if ($lenses->count() > 0)
