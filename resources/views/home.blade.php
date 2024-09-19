@@ -58,7 +58,7 @@
                     <p class="font-somar text-5xl font-light text-white sm:text-6xl md:text-7xl">
                         <span
                             class="text-6xl font-bold text-snapchat-yellow sm:text-7xl md:text-8xl">{{ $user?->plays }}</span>+
-                        Million Plays
+                         Plays
                     </p>
 
                     <img

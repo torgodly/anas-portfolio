@@ -43,8 +43,7 @@ class About extends Page implements HasForms
                     ->numeric(),
                 TextInput::make('plays')
                     ->required()
-                    ->columns(1)
-                    ->numeric(),
+                    ->columns(1),
                 TextInput::make('telegram')
                     ->prefixIcon('tabler-brand-telegram')
                     ->required(),
